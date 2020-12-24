@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StickyLayout">
+        <attr name="Sticky_id" format="reference" />
+        <attr name="Sticky_height" format="dimension" />
+    </declare-styleable>
+
+    <!-- items -->
+    <declare-styleable name="BaseItem">
+        <attr name="xy_icon" format="reference" />
+        <attr name="xy_icon_width" format="reference" />
+        <attr name="xy_icon_height" format="reference" />
+        <attr name="xy_text" format="string" />
+        <attr name="xy_textColor" format="color" />
+        <attr name="xy_textSize" format="dimension" />
+        <attr name="xy_paddingStart" format="dimension" />
+        <attr name="xy_paddingEnd" format="dimension" />
+        <attr name="xy_margin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SubtextItem">
+        <attr name="xy_subtext" format="string" />
+        <attr name="xy_subtextSize" format="dimension" />
+        <attr name="xy_subtextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ClickItem">
+        <attr name="xy_clickIcon" format="reference" />
+        <attr name="xy_clickIcon_width" format="dimension" />
+        <attr name="xy_clickIcon_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchItem">
+        <attr name="xy_checked" format="boolean" />
+    </declare-styleable>
+
+    <!-- groups -->
+    <declare-styleable name="ItemGroup">
+        <attr name="xy_divider" format="reference" />
+        <attr name="xy_divider_paddingLeft" format="dimension" />
+    </declare-styleable>
+</resources>
+
