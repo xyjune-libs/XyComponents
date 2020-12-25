@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="ItemGroup" />
+
+            <com.xyjune.components.widget.group.ItemGroup
+                app:xy_divider="@drawable/xy_def_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <com.xyjune.components.widget.item.BaseItem
+                    app:xy_text="BaseItem"
+                    app:xy_textColor="#ff3030"
+                    app:xy_textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <com.xyjune.components.widget.item.SubtextItem
+                    app:xy_subtext="subtext"
+                    app:xy_subtextColor="#2196F3"
+                    app:xy_subtextSize="14sp"
+                    app:xy_text="BaseItem"
+                    app:xy_textColor="#ff3030"
+                    app:xy_textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </com.xyjune.components.widget.group.ItemGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="ItemGroup-Icon" />
+
+            <com.xyjune.components.widget.group.ItemGroup
+                android:id="@+id/item_group"
+                app:xy_divider="@drawable/xy_def_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <com.xyjune.components.widget.item.BaseItem
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_text="BaseItem"
+                    app:xy_textColor="#ff3030"
+                    app:xy_textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone" />
+
+                <com.xyjune.components.widget.item.SubtextItem
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_subtext="subtext"
+                    app:xy_subtextColor="#2196F3"
+                    app:xy_subtextSize="14sp"
+                    app:xy_text="BaseItem"
+                    app:xy_textColor="#ff3030"
+                    app:xy_textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <com.xyjune.components.widget.item.ClickItem
+                    android:id="@+id/click_item"
+                    app:xy_clickIcon="@drawable/next"
+                    app:xy_clickIcon_height="14dp"
+                    app:xy_clickIcon_width="14dp"
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_subtext="click me"
+                    app:xy_text="ClickItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/xy_def_item_press" />
+
+                <com.xyjune.components.widget.item.SwitchItem
+                    android:id="@+id/switch_item"
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_text="SwitchItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp" />
+
+            </com.xyjune.components.widget.group.ItemGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="RadioItemGroup" />
+
+            <com.xyjune.components.widget.group.RadioItemGroup
+                android:id="@+id/radio_group"
+                app:xy_divider="@drawable/xy_def_divider"
+                app:xy_divider_paddingLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <com.xyjune.components.widget.item.RadioItem
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_text="RadioItem_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <com.xyjune.components.widget.item.RadioItem
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_text="RadioItem_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <com.xyjune.components.widget.item.RadioItem
+                    app:xy_icon="@mipmap/ic_launcher"
+                    app:xy_text="RadioItem_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </com.xyjune.components.widget.group.RadioItemGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

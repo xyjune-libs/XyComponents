@@ -1,5 +1,7 @@
 package com.xyjune.testcomponents;
 
+import androidx.fragment.app.FragmentTransaction;
+
 import com.xyjune.components.activity.BaseActivity;
 
 public class MainActivity extends BaseActivity {
@@ -16,7 +18,10 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-
+        ItemFragment itemFragment = new ItemFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.add(R.id.frag_contain, itemFragment);
+        ft.commit();
     }
 
     @Override

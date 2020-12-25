@@ -39,5 +39,46 @@
         <attr name="xy_divider" format="reference" />
         <attr name="xy_divider_paddingLeft" format="dimension" />
     </declare-styleable>
+
+    <!-- action bar-->
+    <declare-styleable name="BaseActionBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleGravity" format="enum">
+            <enum name="center" value="1" />
+            <enum name="left" value="2" />
+        </attr>
+        <attr name="titleStatusBarInclude" format="boolean" />
+    </declare-styleable>
+
+    <attr name="titleMode">
+        <flag name="left_text" value="0x02" />
+        <flag name="left_icon" value="0x20" />
+        <flag name="right_text" value="0x04" />
+        <flag name="right_icon" value="0x40" />
+        <flag name="text_text" value="0x06" />
+        <flag name="icon_icon" value="0x60" />
+        <flag name="text_icon" value="0x42" />
+        <flag name="icon_text" value="0x24" />
+    </attr>
+
+    <declare-styleable name="DDActionBar">
+        <attr name="titleMode" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="leftIconWidth" format="dimension" />
+        <attr name="rightIconWidth" format="dimension" />
+        <attr name="leftIconHeight" format="dimension" />
+        <attr name="rightIconHeight" format="dimension" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="leftIconTint" format="color" />
+        <attr name="rightIconTint" format="color" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightText" format="string" />
+        <attr name="leftText" format="string" />
+    </declare-styleable>
 </resources>
 
