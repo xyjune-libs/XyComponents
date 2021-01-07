@@ -80,5 +80,10 @@
         <attr name="rightText" format="string" />
         <attr name="leftText" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="CircularRing">
+        <attr name="bgColor" format="color" />
+        <attr name="barColor" format="color" />
+    </declare-styleable>
 </resources>
 
