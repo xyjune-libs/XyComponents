@@ -12,9 +12,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
-import com.xyjune.mdialog.base.BaseAlertDialog;
+import com.xyjune.components.R;
+import com.xyjune.components.dialog.base.BaseAlertDialog;
 
-public class MewDialog extends BaseAlertDialog<com.xyjune.mdialog.MewDialog> {
+
+public class MewDialog extends BaseAlertDialog<MewDialog> {
 
     private String text;
     private int textSize;
@@ -63,27 +65,27 @@ public class MewDialog extends BaseAlertDialog<com.xyjune.mdialog.MewDialog> {
         }
     }
 
-    public com.xyjune.mdialog.MewDialog setContent(String contentText) {
+    public MewDialog setContent(String contentText) {
         text = contentText;
         return this;
     }
 
-    public com.xyjune.mdialog.MewDialog setContentTextSize(int spSize) {
+    public MewDialog setContentTextSize(int spSize) {
         this.textSize = sp2px(getContext(), spSize);
         return this;
     }
 
-    public com.xyjune.mdialog.MewDialog setContentTextColor(int color) {
+    public MewDialog setContentTextColor(int color) {
         this.textColor = color;
         return this;
     }
 
-    public com.xyjune.mdialog.MewDialog setContentImg(int imgId) {
+    public MewDialog setContentImg(int imgId) {
         this.imgId = imgId;
         return this;
     }
 
-    public com.xyjune.mdialog.MewDialog setContentImgSize(int dipWidth, int dipHeight) {
+    public MewDialog setContentImgSize(int dipWidth, int dipHeight) {
         imageWidth = dip2px(getContext(), dipWidth);
         imageHeight = dip2px(getContext(), dipHeight);
         return this;
