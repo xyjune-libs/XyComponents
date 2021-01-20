@@ -7,4 +7,8 @@
     <color name="def_item_color">#FFFFFFFF</color>
     <color name="def_click_color">#f2f2f2</color>
     <color name="def_divider_color">#f2f2f2</color>
+    <color name="def_title_textColor">#333333</color>
+    <color name="def_content_textColor">#666666</color>
+    <color name="def_leftButton_textColor">#FF5722</color>
+    <color name="def_rightButton_textColor">#03A9F4</color>
 </resources>
